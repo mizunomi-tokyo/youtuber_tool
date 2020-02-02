@@ -1,0 +1,25 @@
+{
+  "name": "youtuber_tool",
+  "version": "0.1.0",
+  "description": "Youtube tool for adding text to video in ease",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --colors --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mizunomi/youtuber_tool.git"
+  },
+  "author": "mizunomi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizunomi/youtuber_tool/issues"
+  },
+  "homepage": "https://github.com/mizunomi/youtuber_tool#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
