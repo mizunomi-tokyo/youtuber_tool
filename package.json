@@ -4,7 +4,12 @@
   "description": "Youtube tool for adding text to video in ease",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --colors --config ./webpack.config.js"
+    "start": "webpack --config ./webpack.config.js && node ./dist/bundle.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "commitlint -e $GIT_PARAMS"
+    }
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,9 @@
   },
   "homepage": "https://github.com/mizunomi/youtuber_tool#readme",
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
