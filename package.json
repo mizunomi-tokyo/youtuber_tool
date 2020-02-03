@@ -4,11 +4,11 @@
   "description": "Youtube tool for adding text to video in ease",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config ./webpack.config.js && node ./dist/bundle.js"
+    "start": "tsc && node ./dist/index.js"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "commitlint -e $GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "repository": {
@@ -26,12 +26,13 @@
     "@commitlint/config-conventional": "^8.3.4",
     "husky": "^4.2.1",
     "ts-loader": "^6.2.1",
-    "typescript": "^3.7.5",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "typescript": "^3.7.5"
   },
   "dependencies": {
+    "@types/es6-promise": "^3.3.0",
     "@types/fluent-ffmpeg": "^2.1.13",
+    "@types/node": "^13.7.0",
+    "app-root-path": "^3.0.0",
     "fluent-ffmpeg": "^2.1.2"
   }
 }
