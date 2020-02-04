@@ -1,7 +1,8 @@
 const ffmpeg = require('fluent-ffmpeg');
+const appRoot = require('app-root-path');
 
-const outputPath = require('./fileConstants').outPutPath;
-const resPath = require('./fileConstants').resPath;
+const outputPath = appRoot + '/output';
+const resPath = appRoot + '/res';
 
 export function takeScreenShot() {
     ffmpeg()
