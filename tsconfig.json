@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "module": "es2015",
+    "target": "es6",
+    "module": "commonjs",
     "outDir": "./dist/",
     "removeComments": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
-    "allowJs": true
+    "allowJs": true,
+    "sourceMap": true,
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]
