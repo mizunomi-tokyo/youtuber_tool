@@ -2,9 +2,9 @@
   "name": "youtuber_tool",
   "version": "0.1.0",
   "description": "Youtube tool for adding text to video in ease",
-  "main": "index.js",
+  "main": "command.js",
   "scripts": {
-    "start": "tsc && node ./dist/index.js"
+    "command": "tsc && node ./dist/command.js"
   },
   "husky": {
     "hooks": {
@@ -33,6 +33,7 @@
     "@types/fluent-ffmpeg": "^2.1.13",
     "@types/node": "^13.7.0",
     "app-root-path": "^3.0.0",
+    "cli-progress": "^3.6.0",
     "fluent-ffmpeg": "^2.1.2"
   }
 }
